@@ -50,9 +50,13 @@
   color: white;
   padding: 12px 30px;
   border-radius: 25px;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
   transition: background 0.3s ease;
   margin-top: auto;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 .service-link:hover {
