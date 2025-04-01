@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
+require("../styles/MainPage.css");
+var constants_1 = require("../utils/constants");
+var MainPage = function () {
+    var navigateToService = function (url) {
+        try {
+            window.location.href = url;
+        }
+        catch (error) {
+            console.error('Navigation error:', error);
+            alert('Unable to access the service. Please make sure it is running.');
+        }
+    };
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "main-page", children: [(0, jsx_runtime_1.jsxs)("div", { className: "hero-section", children: [(0, jsx_runtime_1.jsx)("h1", { children: "Medical Prediction System" }), (0, jsx_runtime_1.jsx)("p", { children: "Advanced AI-powered disease prediction tools" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "services-container", children: [(0, jsx_runtime_1.jsxs)("div", { className: "service-card", children: [(0, jsx_runtime_1.jsxs)("div", { className: "card-content", children: [(0, jsx_runtime_1.jsx)("div", { className: "card-icon", children: (0, jsx_runtime_1.jsx)("i", { className: "fas fa-ribbon" }) }), (0, jsx_runtime_1.jsx)("h2", { children: "Breast Cancer Detection" }), (0, jsx_runtime_1.jsx)("p", { children: "Early detection system using machine learning algorithms to analyze medical data and predict breast cancer risk." })] }), (0, jsx_runtime_1.jsx)("button", { className: "explore-btn", onClick: function () { return navigateToService(constants_1.SERVICES.BREAST_CANCER); }, children: "Explore" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "service-card", children: [(0, jsx_runtime_1.jsxs)("div", { className: "card-content", children: [(0, jsx_runtime_1.jsx)("div", { className: "card-icon", children: (0, jsx_runtime_1.jsx)("i", { className: "fas fa-heartbeat" }) }), (0, jsx_runtime_1.jsx)("h2", { children: "Diabetes Detection" }), (0, jsx_runtime_1.jsx)("p", { children: "Advanced diabetes risk assessment tool using AI to analyze health parameters and predict diabetes risk." })] }), (0, jsx_runtime_1.jsx)("button", { className: "explore-btn", onClick: function () { return navigateToService(constants_1.SERVICES.DIABETES); }, children: "Explore" })] })] }), (0, jsx_runtime_1.jsxs)("div", { className: "features-section", children: [(0, jsx_runtime_1.jsx)("h2", { children: "Why Choose Our Platform?" }), (0, jsx_runtime_1.jsxs)("div", { className: "features-grid", children: [(0, jsx_runtime_1.jsxs)("div", { className: "feature", children: [(0, jsx_runtime_1.jsx)("i", { className: "fas fa-brain" }), (0, jsx_runtime_1.jsx)("h3", { children: "AI-Powered Analysis" }), (0, jsx_runtime_1.jsx)("p", { children: "Advanced machine learning algorithms for accurate predictions" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "feature", children: [(0, jsx_runtime_1.jsx)("i", { className: "fas fa-shield-alt" }), (0, jsx_runtime_1.jsx)("h3", { children: "Secure & Private" }), (0, jsx_runtime_1.jsx)("p", { children: "Your medical data is encrypted and protected" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "feature", children: [(0, jsx_runtime_1.jsx)("i", { className: "fas fa-clock" }), (0, jsx_runtime_1.jsx)("h3", { children: "Quick Results" }), (0, jsx_runtime_1.jsx)("p", { children: "Get instant predictions and risk assessments" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "feature", children: [(0, jsx_runtime_1.jsx)("i", { className: "fas fa-chart-line" }), (0, jsx_runtime_1.jsx)("h3", { children: "High Accuracy" }), (0, jsx_runtime_1.jsx)("p", { children: "Proven accuracy rates in disease prediction" })] })] })] })] }));
+};
+exports.default = MainPage;
